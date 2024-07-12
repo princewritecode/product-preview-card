@@ -11,9 +11,7 @@ body {
   align-items: center;
 }
 .main-card {
-  min-width: 30%;
-  min-height: auto;
-  max-width: 40%;
+  width: 600px;
   max-height: auto;
   background-color: white;
   display: flex;
@@ -59,4 +57,28 @@ button {
   border-radius: 0.5rem;
   border-color: #3d826a;
   cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .main-card {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 80%;
+    justify-content: center;
+    align-items: center;
+  }
+  .product-image {
+    border-color: red;
+    overflow: hidden;
+    width: auto;
+    height: auto;
+    border-radius: 0px;
+    background-size: cover;
+    width: 100%;
+  }
+  img {
+    border-radius: 0px;
+    object-fit: cover;
+  }
 }
